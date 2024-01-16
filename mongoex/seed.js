@@ -52,7 +52,7 @@ Product.insertMany(seedProducts)
     .catch(e=> {
         console.log(e)
     })
-
+//
 
 // const p = new Product({
 //     name: 'ruby grapefruit',
