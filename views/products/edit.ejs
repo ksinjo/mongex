@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Edit a Product</h1>
-    <form action="/Products/<%=product._id%>?_method=PUT" method="post">
+    <form action="/products/<%=product._id%>?_method=PUT" method="post">
         <label for ="name">Product Name</label>
         <input type="text" name="name" id="name" placeholder="Product name" value="<%=product.name %>">
         <label for ="price">Price (unit)</label>
