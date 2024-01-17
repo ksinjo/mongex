@@ -9,7 +9,7 @@
     <h1>Edit a Product</h1>
     <form action="/products/<%=product._id%>?_method=PUT" method="post">
         <label for ="name">Product Name</label>
-        <input type="text" name="name" id="name" placeholder="Product name" value="<%=product.name %>">
+        <input type="text" name="name" id="name" placeholder="Product name" value="<%=product.name%>">
         <label for ="price">Price (unit)</label>
         <input type="number" name="price" id="price" placeholder="Price" value="<%=product.price%>">
         <label for ="category">category</label>
@@ -19,6 +19,8 @@
             <option value="dairy"> dairy </option>
         </select>
         <button>submit</button>
+
+        <a href="/products/<%=product._id%>">cancle</a>
 
     </form>
     
