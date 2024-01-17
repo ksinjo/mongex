@@ -3,13 +3,14 @@ const app = express();
 const path = require('path');
 const Product = require('./models/product');
 
+
 app.listen(3333,()=>{
     console.log("App is Listening on port");
 })
 
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
-app.use(express.urlencorded({extended:true}));
+app.use(express.urlencoded({ extended: true }));
 // app.get('/dog',(req,res)=>{
 //     res.send('wooo');
 // })
