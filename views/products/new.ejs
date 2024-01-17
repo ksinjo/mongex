@@ -8,7 +8,18 @@
 <body>
     <h1>Add a Product</h1>
     <form action="/Product" method="post">
-        <input type="text" name="name" placeholder="Product name">
+        <label for ="name">Product Name</label>
+        <input type="text" name="name" id="name" placeholder="Product name">
+        <label for ="price">Price (unit)</label>
+        <input type="number" name="price" id="price" placeholder="Product name">
+        <label for ="category">category</label>
+        <select name="category" id="category">
+            <option value="fruit"> fruit</option>
+            <option value="vegetable"> vegetable </option>
+            <option value="dairy"> dairy </option>
+        </select>
+        <button>submit</button>
+
     </form>
     
 </body>
