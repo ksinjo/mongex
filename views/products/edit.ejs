@@ -6,12 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Add a Product</h1>
-    <form action="/Products" method="post">
+    <h1>Edit a Product</h1>
+    <form action="/Products/<%=product._id%>?_method=PUT" method="post">
         <label for ="name">Product Name</label>
-        <input type="text" name="name" id="name" placeholder="Product name">
+        <input type="text" name="name" id="name" placeholder="Product name" value="<%=product.name %>">
         <label for ="price">Price (unit)</label>
-        <input type="number" name="price" id="price" placeholder="Product name">
+        <input type="number" name="price" id="price" placeholder="Price" value="<%=product.price%>">
         <label for ="category">category</label>
         <select name="category" id="category">
             <option value="fruit"> fruit</option>
