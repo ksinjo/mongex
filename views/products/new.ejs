@@ -7,16 +7,20 @@
 </head>
 <body>
     <h1>Add a Product</h1>
-    <form action="/Products" method="post">
+    <form action="/products" method="post">
         <label for ="name">Product Name</label>
         <input type="text" name="name" id="name" placeholder="Product name">
         <label for ="price">Price (unit)</label>
         <input type="number" name="price" id="price" placeholder="Product name">
         <label for ="category">category</label>
         <select name="category" id="category">
-            <option value="fruit"> fruit</option>
+                <% for(let category of categories){%>
+                <option value="<%=category%>"><%=category%></option>"
+                <%}%>
+            
+            <!-- <option value="fruit"> fruit</option>
             <option value="vegetable"> vegetable </option>
-            <option value="dairy"> dairy </option>
+            <option value="dairy"> dairy </option> -->
         </select>
         <button>submit</button>
 
